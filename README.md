@@ -8,6 +8,7 @@ Topics
 
 * ECMA
 * Advanced Arrays
+* Constructors
 * Object Orientation
 * ECMA5 Objects
 * Testing with Jasmine
