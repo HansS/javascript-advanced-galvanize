@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<h1>Variable Scope</h1>
+<script>
+    var x = 10;
+
+    (function(){
+
+        var x= 20;
+        console.log(x);
+
+    })();
+
+    console.log(x);
+</script>
+</body>
+</html>

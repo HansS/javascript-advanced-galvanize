@@ -6,7 +6,15 @@ Topics and lessons for object oriented JavaScript and ECMA specifications.
 Topics
 ------
 
-* ECMA
+* Advanced Functions
+    * [Anonymous Functions](advanced-functions/anonymous-functions.html)
+    * [Arguments Object](advanced-functions/arguments-object.html)
+    * [Arguments.callee](advanced-functions/arguments-callee.html)
+    * [Autostretch](advanced-functions/autostretch.html)
+    * [Autostretch Lint](advanced-functions/autostretch-lint.html)
+    * [Variable Scope](advanced-functions/variable-scope.html)
+    * [Call &amp; Apply](advanced-functions/call-apply.html)
+    * [Callbacks](advanced-functions/callbacks.html)
 * Advanced Arrays
 * Constructors
 * Object Orientation
