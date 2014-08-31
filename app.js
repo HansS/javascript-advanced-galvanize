@@ -6,7 +6,7 @@ var app = express();
 
 app.use(favicon());
 app.use(logger('dev'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'class-files')));
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
