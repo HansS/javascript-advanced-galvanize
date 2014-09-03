@@ -7,7 +7,29 @@
 <body>
     <h1>Call &amp; Apply</h1>
     <script>
+        /*global window, console */
 
+        function Speak(words) {
+            "use strict";
+            if (this === window) {
+                throw new Error("Speak needs to be bound to an object");
+            }
+
+            console.log(this.name + " the " + this.type + " has spoken.");
+            return (this.type === "Cat") ? this.meow : (arguments[0]) ? arguments[0] : "Hello World";
+        }
+
+        var blackCat = {
+            name: 'Jungle',
+            type: 'Cat',
+            meow: 'Meow Meow Meow',
+            speak: Speak
+
+        };
+        console.log( Speak.apply({ type: "Cat", name: "Biscuit", meow: "Meeeeoooowww Ralow!"}) );
+        //console.log( Speak.call({ type: "Computer", name: "Hal" }) );
+        //console.log( Speak.call({ type: "rapper", name: "Dr. Dre" }, "You Better ask somebody") );
+        //console.log( Speak.apply({ type: "poet", name: "Saul Williams" }, ["Now is the essence of my domain and contains all that was and will be."]) );
     </script>
 </body>
 </html>

@@ -6,5 +6,26 @@
 </head>
 <body>
     <h1>Callbacks</h1>
+    <script>
+        /*global window, console */
+
+        function Speak(words) {
+            "use strict";
+
+            if (this === window) {
+                throw new Error("Speak needs to be bound to an object");
+            }
+            console.log(this.name + " the " + this.type + " has spoken.");
+            return (this.type === "Cat") ? this.meow : (arguments[0]) ? arguments[0] : "Hello World";
+        }
+
+        var blackCat = {
+            name: 'Jungle',
+            type: 'Cat',
+            meow: 'Meow Meow Meow',
+            speak: Speak
+        };
+        console.log(blackCat.speak());
+    </script>
 </body>
 </html>
